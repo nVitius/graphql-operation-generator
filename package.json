@@ -47,7 +47,8 @@
   "scripts": {
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "prepare": "npx tsc -b"
   },
   "types": "lib/index.d.ts"
 }
